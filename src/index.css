@@ -1,13 +1,474 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  padding : 0px;
+  margin : 0px;
+  box-sizing : border-box;
+  font-size : 20px;
+  font-family: sans-serif;
+}
+.my-container{
+  width : 100%;
+  height : 100vh;
+  background-image : url(../public/final-back2.png);
+  background-repeat : no-repeat;
+  background-size : cover;
+}
+:root{
+  --color1 : #000000;
+  --color2 : #f5f5f5;
+  --color3 : #158850;
+  --color4 : #585858;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* -------------------------- Navbar ----------------------------- */
+.navbar {
+  background-color: var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.bg-trans{
+  background-color: transparent !important;
+}
+.active{
+  color : var(--color3)!important;
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+}
+.logo-size-image{
+  width : 4rem;
+}
+.logo-name{
+  color : var(--color2);
+  font-size: 2rem;
+  font-weight : bold;
+}
+.nav-logo {
+  display : flex;
+  color: white;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
+.nav-menus {
+  display: flex;
+  margin-top: 1rem;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-links {
+  font-weight: bold;
+  color: var(--color2);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+.nav-item {
+  line-height: 40px;
+}
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: var(--color3);
+}
+
+.nav-item .active {
+  color: var(--color3);
+}
+.nav-icon {
+  display: none;
+}
+/* ---------------------------- FOOTER PAGE --------------------------- */
+.footer-flex{
+  display : flex;
+  padding : 1rem 0rem;
+}
+.social-links{
+  width : 34%;
+}
+.project-details , .company-details{
+  width : 33%;
+}
+.social-links-part-one{
+  display : flex;
+  justify-content: center;
+}
+.social-links-part-two{
+  display : flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.icon-foot-back{
+  border-radius: 50%;
+  overflow: hidden;
+}
+.logo-foot-size-image{
+  width : 2rem;
+  height : 2rem;
+}
+.logo-foot-name{
+  font-size: 1.5rem;
+  color : var(--color3);
+}
+.foot-link{
+  text-decoration: none;
+  color : var(--color2);
+  display : block;
+  font-weight: bold;
+}
+.foot-link:hover{
+  background-color: var(--color3);
+  color: var(--color1);
+}
+.foot-head-link{
+  text-decoration: none;
+  color : var(--color3);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.foot-head-link:hover{
+  cursor : pointer;
+  color : yellow;
+}
+.icon-foot-link{
+  text-decoration: none;
+  color : var(--color2);
+  padding: 0.25rem;
+  background-color: var(--color3);
+}
+.icon-foot-link:hover{
+  color : var(--color3);
+  background-color: var(--color2);
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color : var(--color2);
+}
+.rightsAll{
+  padding-left: 1rem;
+}
+.copy-foot-image{
+  width : 1.5rem;
+}
+
+/* ------------------------- HOME PAGE CONTENT ------------------------ */
+.content-description{
+  font-family: roboto;
+  text-align: center;
+  font-size: 2.5rem;
+  color : var(--color3);
+  -webkit-text-stroke: 0.06rem rgb(255, 255, 255);
+  padding-top: 7rem;
+}
+.get-started-button{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+/* ------------------ Projects Page ----------------- */
+.content-container{
+  padding : 2rem 1rem;
+  margin : 0px;
+}
+.flex-class{
+  display : flex;
+  justify-content: center;
+  width : 100%;
+  flex-wrap: wrap;
+}
+.flex-items{
+  padding : 0.5rem;
+}
+.full-image{
+  width : 16rem;
+  height : 9rem;
+}
+.cursive-title{
+  font-family: cursive;
+}
+
+/* ------------------------------- Contact Page --------------------------------- */
+.Contact{
+  background-image : url(../public/final-back2.png);
+  background-repeat : no-repeat;
+  background-size : cover;
+}
+.contact-heading{
+  color: var(--color3);
+  font-weight: bold;
+  padding-top : 0.75rem;
+  padding-bottom: 0.25rem;
+}
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-box{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-box2{
+  display : flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+.form-label{
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 0.1rem;
+  color: var(--color2);
+}
+.form-control {
+  font-size: 1rem;
+  width : 300px;
+}
+textarea.form-control{
+  width : 400px;
+}
+.submit-button{
+  width : 100%;
+}
+/* ----------------------------- About Us Page ---------------------------- */
+.about-heading{
+  color : var(--color2);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position : relative;
+}
+.ceos-container{
+  padding : 1rem;
+  display : flex;
+  justify-content: center;
+  gap : 1rem; 
+  flex-wrap: wrap;
+}
+.size-image{
+  width : 8rem;
+  height : 8rem;
+  border : 0.125rem solid var(--color1);
+  border-radius: 0.25rem;
+}
+.bold-class{
+  font-weight: bold;
+  color : var(--color2);
+}
+
+/* ----------------------- ERROR 404 Page ------------------------------- */
+.Page404{
+  height : 100vh;
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.white-color{
+  color : var(--color2);
+}
+
+/* -------------------------------- RESPONSIVENESS ------------------------------------ */
+@media screen and (max-width: 900px) {
+  .nav-menus {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height : 90vh;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 3rem;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menus.active {
+    background: var(--color1);
+    border-top: 0.125rem solid var(--color2);
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    padding-top: 1rem;
+  }
+  .nav-item .active {
+    color: var(--color3);
+    border: none;
+  }
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 20%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--color2);
+  }
+}
+@media screen and (max-width: 750px) {
+  .my-container{
+    background-position: center center;
+  }
+  .nav-menus {
+    margin-top: 0.5rem;
+  }
+  .nav-logo{
+    margin-left: 0.5rem;
+  }
+  .logo-size-image{
+    width : 3rem;
+  }
+  .logo-name{
+    font-size: 1.75rem;
+  }
+  .nav-icon{
+    transform: translate(-100%, 10%);
+  }
+}
+@media screen and (max-width: 700px) {
+  .content-description{
+    padding-top: 5rem;
+  }
+}
+/* ---------------------- Footer ------------------------- */
+@media screen and (max-width : 600px){
+  .footer-flex{
+    flex-direction: column;
+  }
+  .project-details , .company-details , .social-links{
+    width : 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .copyright{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .center-content{
+    display: flex;
+    justify-content: center;
+  }
+  .copy-foot-image{
+    width: 2rem;
+  }
+  .rightsAll{
+    padding-left: 0rem;
+  }
+} 
+
+@media screen and (max-width: 550px) {
+  .nav-menus {
+    margin-top: 0rem;
+    padding-left: 0.5rem;
+  }
+  .logo-size-image{
+    width : 2rem;
+  }
+  .logo-name{
+    font-size: 1.5rem;
+  }
+  .nav-icon{
+    transform: translate(-100%, 5%);
+  }
+  .Contact{
+    background-position: 60% 20%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .form-control{
+    width : 100%;
+  }
+  .flex-box{
+    width : 75%;
+  }
+  .flex-box2{
+    flex-direction: column;
+  }
+  textarea{
+    width: 70%; 
+  }
+  .left-side{
+    text-align: left !important;
+  }
+  .msg{
+    overflow: hidden;
+    border-radius : 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .content-description{
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nav-menus {
+    margin-top: -0.2rem;
+    padding-left: 0px;
+  }
+  .nav-logo{
+    margin-left: 0.25rem;
+  }
+  .logo-size-image{
+    width : 2rem;
+  }
+  .logo-name{
+    font-size: 1.25rem;
+  }
+  .nav-icon{
+    transform: translate(-100%, 0%);
+  }
+}
+@media screen and (max-width: 350px) {
+  .full-image{
+    width : 12rem;
+    height : 6.75rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .content-description{
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+  .cursive-title{
+    font-size: 1rem;
+  }
+  .card-body{
+    padding-left: 0rem;
+    padding-right: 0rem;    
+  }
+}
+@media screen and (max-width: 280px) {
+  .full-image{
+    width : 9rem;
+    height : 5.0625rem;
+  }
 }
