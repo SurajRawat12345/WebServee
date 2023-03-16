@@ -190,6 +190,11 @@
   font-weight: bold;
 }
 /* ------------------ Projects Page ----------------- */
+.Projects{
+  background-image : url(../public/final-back2.png);
+  background-repeat : no-repeat;
+  background-size : cover;
+}
 .content-container{
   padding : 2rem 1rem;
   margin : 0px;
@@ -254,7 +259,20 @@ textarea.form-control{
 .submit-button{
   width : 100%;
 }
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+
 /* ----------------------------- About Us Page ---------------------------- */
+.About-container{
+  background-image : url(../public/final-back2.png);
+  background-repeat : no-repeat;
+  background-size : cover;
+}
 .about-heading{
   color : var(--color2);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -335,7 +353,7 @@ textarea.form-control{
   }
 }
 @media screen and (max-width: 750px) {
-  .my-container{
+  .my-container , .Projects , .About-container{
     background-position: center center;
   }
   .nav-menus {

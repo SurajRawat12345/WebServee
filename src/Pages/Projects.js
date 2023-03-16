@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className='Projects'>
         <NavBar />
-        <div className='content-container bg-dark'>
+        <div className='content-container'>
             <div className='flex-class'>
                 <div className='flex-items'>
                     <div className="card text-center " >
@@ -63,19 +63,6 @@ const Projects = () => {
                 </div>
                 <div className='flex-items'>
                     <div className="card">
-                        <img src="/Images/project2.png" className=" full-image card-img-top" alt="Project-img" />
-                        <div className="card-body text-center">
-                            <h5 className="card-title cursive-title"> Shopping Landing Page </h5>
-                            <Link 
-                                to="https://surajrawat12345.github.io/Shopping_frontend/" 
-                                className="btn btn-success"> 
-                                    Check Now
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-                <div className='flex-items'>
-                    <div className="card">
                         <img src="/Images/project9.png" className=" full-image card-img-top" alt="Project-img" />
                         <div className="card-body text-center">
                             <h5 className="card-title cursive-title"> Tic Tac Toe Game </h5>
@@ -113,15 +100,6 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex-items'>
-                    <div className="card">
-                        <img src="/Images/project6.png" className=" full-image card-img-top" alt="Project-img" />
-                        <div className="card-body text-center">
-                            <h5 className="card-title cursive-title"> Article CRUD App </h5>
-                            <Link to="#" className="btn btn-success"> Check Now</Link>
-                        </div>
-                    </div>
-                </div> 
                 <div className='flex-items'>
                     <div className="card">
                         <img src="/Images/project7.png" className=" full-image card-img-top" alt="Project-img" />
