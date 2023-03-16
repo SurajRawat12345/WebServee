@@ -36,11 +36,11 @@ export const ContactUs = () => {
             <input type="email" name="user_email" className='form-control' placeholder="Enter your Email Id" required/>
           </div>
           <div className='mb-2 flex-box2'>
-            <label className='form-label'>Phone</label>
+            <label className='form-label'>Phone :</label>
             <input type="number" name="user_phone" className='form-control' placeholder="Enter your phone no." required/>
           </div>
           <div className='mb-2 text-center left-side msg' >
-            <label className='form-label'> Tell us about your Project</label>
+            <label className='form-label'> Tell us about your Project :</label>
             <textarea name="message" className='form-control' rows={3} placeholder='Write details about the project' required/>
           </div>
           <div className='mb-3 flex-box2 '>
