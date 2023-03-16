@@ -15,7 +15,7 @@ const About = () => {
                         </div>
                         <div className="card-body text-center">
                             <h5 className="card-title bold-class"> Suraj Rawat </h5>
-                            <p className="card-text bold-class p-1">Chief Technology Officer(CTO)</p>
+                            <p className="card-text bold-class p-2">Chief Technology Officer(CTO)</p>
                         </div>
                     </div>
                     <div className="card  pt-3 bg-black">
@@ -24,7 +24,7 @@ const About = () => {
                         </div>
                         <div className="card-body">
                             <h5 className="card-title bold-class"> Raghav Soni </h5>
-                            <p className="card-text bold-class">Chief Operating officer(COO)</p>
+                            <p className="card-text bold-class p-2">Chief Operating officer(COO)</p>
                         </div>
                     </div>
                     <div className="card  pt-3 bg-black">
@@ -33,7 +33,7 @@ const About = () => {
                         </div>
                         <div className="card-body">
                             <h5 className="card-title bold-class"> Shivam Verma </h5>
-                            <p className="card-text bold-class">Chief Executive Officer(CEO)</p>
+                            <p className="card-text bold-class p-2">Chief Executive Officer(CEO)</p>
                         </div>
                     </div>
                     <div className="card  pt-3 bg-black">
@@ -42,7 +42,7 @@ const About = () => {
                         </div>
                         <div className="card-body">
                             <h5 className="card-title bold-class"> Shivam Panwar </h5>
-                            <p className="card-text bold-class">Chief Executive Officer(CEO)</p>
+                            <p className="card-text bold-class p-2">Chief Executive Officer(CEO)</p>
                         </div>
                     </div>
                     <div className="card  pt-3 bg-black">
@@ -51,7 +51,7 @@ const About = () => {
                         </div>
                         <div className="card-body">
                             <h5 className="card-title bold-class">Kshitiz Tiwari</h5>
-                            <p className="card-text bold-class">Chief Executive Officer(CEO)</p>
+                            <p className="card-text bold-class p-2">Chief Executive Officer(CEO)</p>
                         </div>
                     </div>
                 </div>    
