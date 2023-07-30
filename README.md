@@ -18,6 +18,7 @@ Live Link : https://cozy-medovik-67fb14.netlify.app/
     <li> CSS </li>
     <li> Javascript </li>
     <li> React.js </li>
+    <li> EmailJS API </li>
   </ul>
 
 # Packages Used :
