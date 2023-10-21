@@ -3,7 +3,7 @@
 
 Webservee is a react-based simple and responsive web application where we sell website templates.
 
-Live Link : https://cozy-medovik-67fb14.netlify.app/
+Live Link : https://webservee.netlify.app
 
 # DEMO :
 
