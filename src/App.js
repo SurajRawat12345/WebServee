@@ -3,7 +3,6 @@ import {Routes , Route} from 'react-router-dom';
 
 /* -------------- Components of Webservee app ------------- */
 
-//import Navbar from './Navbar';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
